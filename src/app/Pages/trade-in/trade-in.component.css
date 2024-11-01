@@ -5,17 +5,11 @@
   overflow: hidden;
 }
 
-@media (max-width: 991px) {
-  .trade-in-step1 {
-    padding: 100px 0;
-  }
-}
 
 .hero-section {
   position: relative;
   min-height: 344px;
   width: 100%;
-  padding: 144px 70px 110px;
 }
 
 @media (max-width: 991px) {

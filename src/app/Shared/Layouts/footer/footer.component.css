@@ -11,17 +11,20 @@
 }
 
 .social-icons {
+  background-color: #333;
+  border-radius: 4px;
+  width: 180px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
+  padding: 8px;
 }
 
 .social-icons i {
   font-size: 30px;
   cursor: pointer;
 }
-
-
 
 .footer-title {
   font-size: 16px;
