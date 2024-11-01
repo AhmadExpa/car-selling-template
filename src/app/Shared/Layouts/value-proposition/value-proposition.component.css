@@ -10,7 +10,7 @@
   align-items: center;
   width: 100%;
   height: 400px;
-  background-image: url("/trade-in-Banner.png");
+  background-image: url("/assets/Images/trade-in-Banner.png");
   background-size: cover;
   background-position: center;
 }
@@ -56,4 +56,9 @@
   margin-top: 29px;
   font-size: 18px;
   color: #a3895a;
+}
+@media screen and (max-width: 991px) {
+  .section-title {
+    font: 600 20px Raleway, sans-serif;
+  }
 }

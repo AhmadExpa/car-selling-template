@@ -1,22 +1,18 @@
-.trade-in-step1 {
+.main-container {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
-
-.hero-section {
+.hero-banner {
   position: relative;
   min-height: 344px;
   width: 100%;
-}
-
-@media (max-width: 991px) {
-  .hero-section {
-    max-width: 100%;
-    padding: 100px 20px 110px;
-  }
+  color: #e4c481;
+  text-transform: uppercase;
+  padding: 144px 70px 110px;
+  font: 800 48px Raleway, sans-serif;
 }
 
 .hero-image {
@@ -30,9 +26,6 @@
 
 .hero-title {
   position: relative;
-  color: #e4c481;
-  text-transform: uppercase;
-  font: 800 48px Raleway, sans-serif;
 }
 
 .highlight {
@@ -55,20 +48,4 @@
     padding: 0 20px;
   }
 }
-
-.content-wrapper {
-  display: flex;
-  margin-top: 16px;
-  width: 100%;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-@media (max-width: 991px) {
-  .content-wrapper {
-    max-width: 100%;
-  }
-}
-
-
 

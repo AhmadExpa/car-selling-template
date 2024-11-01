@@ -1,6 +1,6 @@
 /* Background Image and Layout */
 .bg-image-desktop {
-  background-image: url("/background-image.svg");
+  background-image: url("/assets/Images/background-image.svg");
   background-size: cover;
   background-position: center;
 }

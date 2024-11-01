@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-trade-in-form',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './trade-in-form.component.css'
 })
 export class TradeInFormComponent {
+  constructor(private router: Router) { }
   currentStep: number = 1;
 
   nextStep() {
@@ -23,5 +25,6 @@ export class TradeInFormComponent {
   onSubmit() {
     // Handle form submission logic here
     console.log("Form submitted");
+    this.router.navigate(['/thank-you']);
   }
 }
