@@ -1,0 +1,118 @@
+/* Background Image and Layout */
+.bg-image-desktop {
+  background-image: url("/background-image.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-image-mobile {
+  background-color: #000; /* Mobile background color */
+}
+
+.contact-nav {
+  font-size: 15px;
+  color: #333;
+  font-weight: 700;
+}
+
+.contact-nav-mobile {
+  height: 48px;
+  background-color: #000; /* Mobile contact bar background */
+}
+
+.contact-item,
+.contact-item a {
+  color: #d0ae68;
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 1rem;
+  margin-right: 8px;
+}
+
+.separator {
+  width: 1px;
+  height: 16px;
+  background-color: #333;
+}
+
+.navbar {
+  font-family: Gotham, sans-serif;
+}
+
+.logo {
+  height: 44px;
+  cursor: pointer;
+}
+
+.logoMobile {
+  margin-top: 1rem;
+  height: 72px;
+  cursor: pointer;
+}
+
+.nav-link {
+  color: #8d8d8d;
+  text-decoration: none;
+  font-size: 1.33vw;
+  font-weight: 400;
+  position: relative;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #000;
+  font-weight: 600;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #d0ae68;
+  transition: width 0.3s;
+  margin-top: 4px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.dropdown-menu {
+  border: none;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Icon and Popup */
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #8d8d8d;
+}
+
+.search-popup {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.search-popup input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+}

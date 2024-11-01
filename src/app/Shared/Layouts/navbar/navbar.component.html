@@ -1,0 +1,76 @@
+<div class="container-fluid" [ngClass]="{ 'bg-image-desktop': isDesktop }">
+  <!-- Contact Information -->
+  <div class="row contact-nav" [ngClass]="{ 'contact-nav-mobile': !isDesktop }">
+    <div
+      class="d-flex gap-3"
+      [ngClass]="{
+        'justify-content-start': !isDesktop,
+        'justify-content-end': isDesktop
+      }"
+    >
+      <div class="contact-item d-flex align-items-center">
+        <i class="fas fa-phone icon"></i>
+        <a href="#section" class="contact-link">Call Us</a>
+      </div>
+      <div class="contact-item d-flex align-items-center">
+        <i class="fas fa-envelope icon"></i>
+        <a href="#email" class="contact-link">Email Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar Section -->
+  <div class="row">
+    <header
+      class="navbar navbar-expand-lg px-4 py-3 shadow-sm d-flex justify-content-center"
+    >
+      <a class="navbar-brand" href="#">
+        <img
+          src="/desktop-logo.svg"
+          alt="Company Logo"
+          class="logo d-none d-lg-block"
+        />
+        <img
+          src="/mobile-logo.svg"
+          alt="Company Name"
+          class="logoMobile d-block d-lg-none"
+        />
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-2 main-nav">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Buy Cars</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Commercial Vehicles</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link"
+              id="sellCarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Sell Car <span><i class="fas fa-angle-down"></i></span
+            ></a>
+            <ul class="dropdown-menu" aria-labelledby="sellCarDropdown">
+              <li><a class="dropdown-item" href="#">Request Car</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Finance</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Search Icon and Popup -->
+      <div class="search-container d-none d-lg-block">
+        <i class="fas fa-search search-icon" (click)="toggleSearchPopup()"></i>
+        <div class="search-popup" *ngIf="isSearchPopupVisible">
+          <input type="text" class="form-control" placeholder="Search..." style="border: none;"/>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>

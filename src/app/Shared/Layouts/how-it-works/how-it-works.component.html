@@ -1,0 +1,17 @@
+<section class="how-it-works d-flex flex-column justify-content-center p-2">
+  <header class="section-header">
+    <h2 class="section-title">{{ sectionTitle }}</h2>
+    <div class="section-divider"></div>
+  </header>
+  <p class="section-description">
+    {{ sectionDescription }}
+  </p>
+  <div class="process">
+    <ul class="steps-list">
+      <li class="step-item" *ngFor="let step of steps">
+        <h3 class="step-title">{{ step.title }}</h3>
+        <p class="step-description">{{ step.description }}</p>
+      </li>
+    </ul>
+  </div>
+</section>

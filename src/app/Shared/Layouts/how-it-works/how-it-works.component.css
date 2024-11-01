@@ -1,0 +1,72 @@
+.how-it-works {
+  margin-top: 60px;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-title {
+  font: 800 40px Raleway, sans-serif;
+  color: #e4c481;
+}
+
+.section-divider {
+  width: 42px;
+  height: 4px;
+  background-color: #000;
+  margin: 23px auto;
+}
+
+.section-description {
+  max-width: 830px;
+  text-align: center;
+  margin: 18px auto;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.process {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+  padding: 35px;
+}
+
+.steps-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.step-item {
+  margin-top: 20px;
+}
+
+.step-title {
+  background-color: #ebebeb;
+  padding: 24px 37px;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.step-description {
+  padding: 21px 37px;
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .section-title {
+    font-size: 32px;
+  }
+  .section-description {
+    font-size: 14px;
+  }
+  .step-title {
+    font-size: 16px;
+  }
+  .step-description {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,32 @@
+.reason-title {
+  background-color: #ebebeb;
+  padding: 24px 37px;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.reason-description {
+  padding: 21px 37px;
+  font-size: 16px;
+}
+.reason-item {
+  margin-top: 20px;
+}
+.process-details {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+  padding: 35px;
+}
+.trade-in-process {
+  margin-top: 60px;
+}
+.section-title {
+  font: 800 40px Raleway, sans-serif;
+  color: black;
+  text-align: center;
+}
+.trade-in-reasons {
+  list-style-type: none;
+  padding: 0;
+}
